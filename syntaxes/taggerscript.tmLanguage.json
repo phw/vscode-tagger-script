@@ -1,0 +1,55 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Tagger Script",
+	"scopeName": "source.taggerscript",
+	"patterns": [
+		{
+			"comment": "Comments ($noop(...))",
+			"name": "comment.block.taggerscript",
+			"begin": "\\$noop\\(",
+			"end": "(?<!\\\\)\\)",
+			"patterns": [
+				{
+					"include": "#parantheses"
+				}
+			]
+		},
+		{
+			"comment": "Functions",
+			"name": "meta.taggerscript",
+			"begin": "\\$(?!noop)[a-zA-Z][_a-zA-Z0-9]*\\(",
+			"end": "\\)",
+			"captures": {
+				"0": {
+					"name": "support.function.taggerscript"
+				}
+			},
+			"patterns": [
+				{
+					"include": "$self"
+				}
+			]
+		},
+		{
+			"comment": "Variables",
+			"name": "variable.taggerscript",
+			"match": "%[_a-zA-Z0-9:]*%"
+		},
+		{
+			"comment": "Escape sequences",
+			"name": "keyword.other.taggerscript",
+			"match": "\\\\."
+		}
+	],
+	"repository": {
+		"parantheses": {
+			"begin": "(?<!\\\\)\\(",
+			"end": "(?<!\\\\)\\)",
+			"patterns": [
+				{
+					"include": "#parantheses"
+				}
+			]
+		}
+	}
+}

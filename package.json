@@ -1,0 +1,25 @@
+{
+    "name": "tagger-script",
+    "displayName": "tagger-script",
+    "description": "Syntax highlighting and code snippets for MusicBrainz Picard Tagger Script.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "taggerscript",
+            "aliases": ["Tagger Script", "taggerscript"],
+            "extensions": [".taggerscript",".pts"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "taggerscript",
+            "scopeName": "source.taggerscript",
+            "path": "./syntaxes/taggerscript.tmLanguage.json"
+        }]
+    }
+}
