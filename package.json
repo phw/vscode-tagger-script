@@ -1,6 +1,6 @@
 {
     "name": "tagger-script",
-    "displayName": "tagger-script",
+    "displayName": "Tagger Script Syntax",
     "description": "Syntax highlighting and code snippets for MusicBrainz Picard Tagger Script.",
     "version": "0.0.1",
     "publisher": "phw",
