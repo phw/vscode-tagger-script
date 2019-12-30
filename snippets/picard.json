@@ -211,6 +211,14 @@
     "prefix": "$endswith",
     "body": "\\$endswith(${1:text,prefix})"
   },
+  "$is_audio()": {
+    "prefix": "$is_audio",
+    "body": "\\$is_audio()"
+  },
+  "$is_video()": {
+    "prefix": "$is_video",
+    "body": "\\$is_video()"
+  },
   "%album%": {
     "prefix": "%album",
     "body": "%album%"
@@ -506,6 +514,34 @@
   "%showsort%": {
     "prefix": "%showsort",
     "body": "%showsort%"
+  },
+  "%replaygain_album_gain%": {
+    "prefix": "%replaygain_album_gain",
+    "body": "%replaygain_album_gain%"
+  },
+  "%replaygain_album_peak%": {
+    "prefix": "%replaygain_album_peak",
+    "body": "%replaygain_album_peak%"
+  },
+  "%replaygain_album_range%": {
+    "prefix": "%replaygain_album_range",
+    "body": "%replaygain_album_range%"
+  },
+  "%replaygain_track_gain%": {
+    "prefix": "%replaygain_track_gain",
+    "body": "%replaygain_track_gain%"
+  },
+  "%replaygain_track_peak%": {
+    "prefix": "%replaygain_track_peak",
+    "body": "%replaygain_track_peak%"
+  },
+  "%replaygain_track_range%": {
+    "prefix": "%replaygain_track_range",
+    "body": "%replaygain_track_range%"
+  },
+  "%replaygain_reference_loudness%": {
+    "prefix": "%replaygain_reference_loudness",
+    "body": "%replaygain_reference_loudness%"
   },
   "%_albumtracknumber%": {
     "prefix": "%_albumtracknumber",
