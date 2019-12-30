@@ -22,6 +22,10 @@
             "language": "taggerscript",
             "scopeName": "source.taggerscript",
             "path": "./syntaxes/taggerscript.tmLanguage.json"
+        }],
+        "snippets": [{
+            "language": "taggerscript",
+            "path": "./snippets/picard.json"
         }]
     }
 }
