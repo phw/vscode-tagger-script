@@ -2,6 +2,7 @@
 .vscode-test/**
 .github/**
 .gitignore
+*.vsix
 node_modules/**
 package-lock.json
 vsc-extension-quickstart.md
