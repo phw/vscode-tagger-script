@@ -44,6 +44,7 @@
         "vsce": "^1.71.0"
     },
     "scripts": {
+        "package": "vsce package",
         "publish": "vsce publish"
     }
 }

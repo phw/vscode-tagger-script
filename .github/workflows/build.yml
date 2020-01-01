@@ -1,0 +1,35 @@
+name: Build and publish
+
+on: [push]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    - name: Install dependencies
+      run: npm install
+    - name: Package extension
+      run: npm run package
+    - name: Publish extension
+      if: startsWith(github.ref, 'refs/tags/')
+      run: npm run publish -- -p "$VSCE_TOKEN"
+      env:
+        VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
+    - name: Prepare release
+      id: release
+      run: |
+        VERSION=$(node --eval "process.stdout.write(require('./package.json').version)")
+        echo "::set-output name=version::$VERSION"
+    - name: Update release
+      uses: softprops/action-gh-release@v1
+      if: startsWith(github.ref, 'refs/tags/')
+      with:
+        name: Tagger Script Syntax ${{ steps.release.outputs.version }}
+        files: '*.vsix'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
