@@ -44,7 +44,7 @@
         "vsce": "^1.71.0"
     },
     "scripts": {
-        "package": "vsce package",
+        "package": "mkdir -p build && vsce package --out build",
         "publish": "vsce publish"
     }
 }

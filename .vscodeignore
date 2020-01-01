@@ -3,6 +3,7 @@
 .github/**
 .gitignore
 *.vsix
+build/**
 node_modules/**
 package-lock.json
 vsc-extension-quickstart.md
