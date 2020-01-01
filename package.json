@@ -12,20 +12,38 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "taggerscript",
-            "aliases": ["Tagger Script", "taggerscript"],
-            "extensions": [".taggerscript",".pts"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "taggerscript",
-            "scopeName": "source.taggerscript",
-            "path": "./syntaxes/taggerscript.tmLanguage.json"
-        }],
-        "snippets": [{
-            "language": "taggerscript",
-            "path": "./snippets/picard.json"
-        }]
+        "languages": [
+            {
+                "id": "taggerscript",
+                "aliases": [
+                    "Tagger Script",
+                    "taggerscript"
+                ],
+                "extensions": [
+                    ".taggerscript",
+                    ".pts"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "taggerscript",
+                "scopeName": "source.taggerscript",
+                "path": "./syntaxes/taggerscript.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "taggerscript",
+                "path": "./snippets/picard.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "vsce": "^1.71.0"
+    },
+    "scripts": {
+        "publish": "vsce publish"
     }
 }
