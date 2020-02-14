@@ -1,4 +1,5 @@
 {
+  // Functions
   "Comment": {
     "prefix": "$noop",
     "body": "\\$noop($1)"
@@ -263,6 +264,8 @@
     "prefix": "$datetime",
     "body": "\\$datetime(format=%Y-%m-%d %H:%M:%S)"
   },
+
+  // Metadata variables
   "%album%": {
     "prefix": "%album",
     "body": "%album%"
@@ -591,6 +594,8 @@
     "prefix": "%replaygain_reference_loudness",
     "body": "%replaygain_reference_loudness%"
   },
+
+  // Technical variables
   "%_albumtracknumber%": {
     "prefix": "%_albumtracknumber",
     "body": "%_albumtracknumber%"
@@ -715,6 +720,8 @@
     "prefix": "%_albumartists_sort",
     "body": "%_albumartists_sort%"
   },
+
+  // Coverart specific variables
   "%coverart_maintype%": {
     "prefix": "%coverart_maintype",
     "body": "%coverart_maintype%"

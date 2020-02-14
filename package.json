@@ -36,7 +36,7 @@
         "snippets": [
             {
                 "language": "taggerscript",
-                "path": "./snippets/picard.json"
+                "path": "./snippets/picard.jsonc"
             }
         ]
     },
