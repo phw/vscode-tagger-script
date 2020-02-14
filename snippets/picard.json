@@ -19,6 +19,10 @@
     "prefix": "$upper",
     "body": "\\$upper(${1:text})"
   },
+  "$reverse(text)": {
+    "prefix": "$reverse",
+    "body": "\\$reverse(${1:text})"
+  },
   "$left(text,num)": {
     "prefix": "$left",
     "body": "\\$left(${1:text,num})"
@@ -26,6 +30,14 @@
   "$right(text,num)": {
     "prefix": "$right",
     "body": "\\$right(${1:text,num})"
+  },
+  "$substr(text,start,end)": {
+    "prefix": "$substr",
+    "body": "\\$substr(${1:text,start,end})"
+  },
+  "$find(haystack,needle)": {
+    "prefix": "$find",
+    "body": "\\$find(${1:haystack,needle})"
   },
   "$matchedtracks()": {
     "prefix": "$matchedtracks",
@@ -78,6 +90,30 @@
   "$get(name)": {
     "prefix": "$get",
     "body": "\\$get(${1:name})"
+  },
+  "$getmulti(name,index,separator=\"; \")": {
+    "prefix": "$getmulti",
+    "body": "\\$getmulti(${1:name,index,separator=\"; \"})"
+  },
+  "$slice(name,start,end,separator=\"; \")": {
+    "prefix": "$slice",
+    "body": "\\$slice(${1:name,start,end,separator=\"; \"})"
+  },
+  "$join(name,text,separator=\"; \")": {
+    "prefix": "$join",
+    "body": "\\$join(${1:name,text,separator=\"; \"})"
+  },
+  "$map(name,code,separator=\"; \")": {
+    "prefix": "$map",
+    "body": "\\$map(${1:name,code,separator=\"; \"})"
+  },
+  "$foreach(name,code,separator=\"; \")": {
+    "prefix": "$foreach",
+    "body": "\\$foreach(${1:name,code,separator=\"; \"})"
+  },
+  "$while(condition,code)": {
+    "prefix": "$while",
+    "body": "\\$while(${1:condition,code})"
   },
   "$copy(new,old)": {
     "prefix": "$copy",
@@ -175,6 +211,10 @@
     "prefix": "$len",
     "body": "\\$len(${1:text})"
   },
+  "$lenmulti(name,separator=\"; \")": {
+    "prefix": "$lenmulti",
+    "body": "\\$lenmulti(${1:name,separator=\"; \"})"
+  },
   "$performer(pattern=\"\",join=\", \")": {
     "prefix": "$performer",
     "body": "\\$performer()"
@@ -219,6 +259,10 @@
     "prefix": "$is_video",
     "body": "\\$is_video()"
   },
+  "$datetime(format=%Y-%m-%d %H:%M:%S)": {
+    "prefix": "$datetime",
+    "body": "\\$datetime(format=%Y-%m-%d %H:%M:%S)"
+  },
   "%album%": {
     "prefix": "%album",
     "body": "%album%"
@@ -250,6 +294,10 @@
   "%originalyear%": {
     "prefix": "%originalyear",
     "body": "%originalyear%"
+  },
+  "%originalfilename%": {
+    "prefix": "%originalfilename",
+    "body": "%originalfilename%"
   },
   "%albumartist%": {
     "prefix": "%albumartist",
