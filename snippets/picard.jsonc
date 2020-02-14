@@ -733,5 +733,15 @@
   "%coverart_comment%": {
     "prefix": "%coverart_comment",
     "body": "%coverart_comment%"
+  },
+
+  // Loop variables
+  "%_loop_value%": {
+    "prefix": "%_loop_value",
+    "body": "%_loop_value%"
+  },
+  "%_loop_count%": {
+    "prefix": "%_loop_count",
+    "body": "%_loop_count%"
   }
 }
