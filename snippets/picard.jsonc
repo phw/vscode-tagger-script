@@ -108,6 +108,14 @@
     "prefix": "$map",
     "body": "\\$map(${1:name,code,separator=\"; \"})"
   },
+  "$sortmulti(name,separator=\"; \")": {
+    "prefix": "$sortmulti",
+    "body": "\\$sortmulti(${1:name,separator=\"; \"})"
+  },
+  "$reversemulti(name,separator=\"; \")": {
+    "prefix": "$reversemulti",
+    "body": "\\$reversemulti(${1:name,separator=\"; \"})"
+  },
   "$foreach(name,code,separator=\"; \")": {
     "prefix": "$foreach",
     "body": "\\$foreach(${1:name,code,separator=\"; \"})"
@@ -611,6 +619,10 @@
   "%_releaselanguage%": {
     "prefix": "%_releaselanguage",
     "body": "%_releaselanguage%"
+  },
+  "%_releaselcountries%": {
+    "prefix": "%_releaselcountries",
+    "body": "%_releaselcountries%"
   },
   "%_releasegroup%": {
     "prefix": "%_releasegroup",
