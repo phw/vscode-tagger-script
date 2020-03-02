@@ -5,6 +5,11 @@ All notable changes to the "tagger-script" extension will be documented in this 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.2] - 2020-03-02
+### Added
+- Added snippets for Picard 2.3.1 (`$sortmulti`, `$reversemulti`, `%_releasecountries%`)
+- Extension icon
+
 ## [0.2.1] - 2020-02-14
 ### Added
 - Added snippets for special loop variables
