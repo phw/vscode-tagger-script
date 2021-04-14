@@ -120,9 +120,9 @@
     "prefix": "$replacemulti",
     "body": "\\$replacemulti(${1:name,search,replace[,separator]})"
   },
-  "$unique(name,case_sensitive[,separator])": {
+  "$unique(name,[case_sensitive[,separator]])": {
     "prefix": "$unique",
-    "body": "\\$unique(${1:name,case_sensitive[,separator]})"
+    "body": "\\$unique(${1:name,[case_sensitive[,separator]]})"
   },
   "$foreach(name,code[,separator])": {
     "prefix": "$foreach",
