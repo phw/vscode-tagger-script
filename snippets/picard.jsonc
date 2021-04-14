@@ -76,9 +76,9 @@
     "prefix": "$set",
     "body": "\\$set(${1:name,value})"
   },
-  "$setmulti(name,value,separator=\"; \")": {
+  "$setmulti(name,value[,separator])": {
     "prefix": "$setmulti",
-    "body": "\\$setmulti(${1:name,value,separator=\"; \"})"
+    "body": "\\$setmulti(${1:name,value[,separator]})"
   },
   "$unset(name)": {
     "prefix": "$unset",
@@ -92,41 +92,41 @@
     "prefix": "$get",
     "body": "\\$get(${1:name})"
   },
-  "$getmulti(name,index,separator=\"; \")": {
+  "$getmulti(name,index[,separator])": {
     "prefix": "$getmulti",
-    "body": "\\$getmulti(${1:name,index,separator=\"; \"})"
+    "body": "\\$getmulti(${1:name,index[,separator]})"
   },
-  "$slice(name,start,end,separator=\"; \")": {
+  "$slice(name,start,end[,separator])": {
     "prefix": "$slice",
-    "body": "\\$slice(${1:name,start,end,separator=\"; \"})"
+    "body": "\\$slice(${1:name,start,end[,separator]})"
   },
-  "$join(name,text,separator=\"; \")": {
+  "$join(name,text[,separator])": {
     "prefix": "$join",
-    "body": "\\$join(${1:name,text,separator=\"; \"})"
+    "body": "\\$join(${1:name,text[,separator]})"
   },
-  "$map(name,code,separator=\"; \")": {
+  "$map(name,code[,separator])": {
     "prefix": "$map",
-    "body": "\\$map(${1:name,code,separator=\"; \"})"
+    "body": "\\$map(${1:name,code[,separator]})"
   },
-  "$sortmulti(name,separator=\"; \")": {
+  "$sortmulti(name[,separator])": {
     "prefix": "$sortmulti",
-    "body": "\\$sortmulti(${1:name,separator=\"; \"})"
+    "body": "\\$sortmulti(${1:name[,separator]})"
   },
-  "$reversemulti(name,separator=\"; \")": {
+  "$reversemulti(name[,separator])": {
     "prefix": "$reversemulti",
-    "body": "\\$reversemulti(${1:name,separator=\"; \"})"
+    "body": "\\$reversemulti(${1:name[,separator]})"
   },
-  "$replacemulti(name,search,replace,separator=\"; \")": {
+  "$replacemulti(name,search,replace[,separator])": {
     "prefix": "$replacemulti",
-    "body": "\\$replacemulti(${1:name,search,replace,separator=\"; \"})"
+    "body": "\\$replacemulti(${1:name,search,replace[,separator]})"
   },
-  "$unique(name,case_sensitive,separator=\"; \")": {
+  "$unique(name,case_sensitive[,separator])": {
     "prefix": "$unique",
-    "body": "\\$unique(${1:name,case_sensitive,separator=\"; \"})"
+    "body": "\\$unique(${1:name,case_sensitive[,separator]})"
   },
-  "$foreach(name,code,separator=\"; \")": {
+  "$foreach(name,code[,separator])": {
     "prefix": "$foreach",
-    "body": "\\$foreach(${1:name,code,separator=\"; \"})"
+    "body": "\\$foreach(${1:name,code[,separator]})"
   },
   "$while(condition,code)": {
     "prefix": "$while",
@@ -228,17 +228,17 @@
     "prefix": "$len",
     "body": "\\$len(${1:text})"
   },
-  "$lenmulti(name,separator=\"; \")": {
+  "$lenmulti(name[,separator])": {
     "prefix": "$lenmulti",
-    "body": "\\$lenmulti(${1:name,separator=\"; \"})"
+    "body": "\\$lenmulti(${1:name[,separator]})"
   },
-  "$performer(pattern=\"\",join=\", \")": {
+  "$performer(pattern[,separator])": {
     "prefix": "$performer",
-    "body": "\\$performer()"
+    "body": "\\$performer(${1:pattern[,separator]})"
   },
-  "$firstalphachar(text,nonalpha=\"#\")": {
+  "$firstalphachar(text[,nonalpha])": {
     "prefix": "$firstalphachar",
-    "body": "\\$firstalphachar(${1:text,nonalpha=\"#\"})"
+    "body": "\\$firstalphachar(${1:text[,nonalpha]})"
   },
   "$initials(text)": {
     "prefix": "$initials",
@@ -252,13 +252,13 @@
     "prefix": "$firstwords",
     "body": "\\$firstwords(${1:text,length})"
   },
-  "$swapprefix(text,*prefixes=\"a\",\"the\")": {
+  "$swapprefix(text[,prefixes])": {
     "prefix": "$swapprefix",
-    "body": "\\$swapprefix(${1:text,*prefixes=\"a\",\"the\"})"
+    "body": "\\$swapprefix(${1:text[,prefixes]})"
   },
-  "$delprefix(text,*prefixes=\"a\",\"the\")": {
+  "$delprefix(text[,prefixes])": {
     "prefix": "$delprefix",
-    "body": "\\$delprefix(${1:text,*prefixes=\"a\",\"the\"})"
+    "body": "\\$delprefix(${1:text[,prefixes]})"
   },
   "$startswith(text,prefix)": {
     "prefix": "$startswith",
@@ -276,9 +276,9 @@
     "prefix": "$is_video",
     "body": "\\$is_video()"
   },
-  "$datetime(format=%Y-%m-%d %H:%M:%S)": {
+  "$datetime([format])": {
     "prefix": "$datetime",
-    "body": "\\$datetime(format=%Y-%m-%d %H:%M:%S)"
+    "body": "\\$datetime(${1:[format]})"
   },
 
   // Metadata variables
