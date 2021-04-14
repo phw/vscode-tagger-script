@@ -43,7 +43,7 @@
     },
     "devDependencies": {
         "changelog-parser": "^2.8.0",
-        "vsce": "^1.74.0"
+        "vsce": "^1.87.1"
     },
     "scripts": {
         "package": "mkdir -p build && vsce package --out build",
