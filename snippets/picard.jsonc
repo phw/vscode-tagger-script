@@ -116,6 +116,14 @@
     "prefix": "$reversemulti",
     "body": "\\$reversemulti(${1:name,separator=\"; \"})"
   },
+  "$replacemulti(name,search,replace,separator=\"; \")": {
+    "prefix": "$replacemulti",
+    "body": "\\$replacemulti(${1:name,search,replace,separator=\"; \"})"
+  },
+  "$unique(name,case_sensitive,separator=\"; \")": {
+    "prefix": "$unique",
+    "body": "\\$unique(${1:name,case_sensitive,separator=\"; \"})"
+  },
   "$foreach(name,code,separator=\"; \")": {
     "prefix": "$foreach",
     "body": "\\$foreach(${1:name,code,separator=\"; \"})"
@@ -612,6 +620,14 @@
     "prefix": "%_totalalbumtracks",
     "body": "%_totalalbumtracks%"
   },
+  "%_recording_firstreleasedate%": {
+    "prefix": "%_recording_firstreleasedate",
+    "body": "%_recording_firstreleasedate%"
+  },
+  "%_releaseannotation%": {
+    "prefix": "%_releaseannotation",
+    "body": "%_releaseannotation%"
+  },
   "%_releasecomment%": {
     "prefix": "%_releasecomment",
     "body": "%_releasecomment%"
@@ -631,6 +647,10 @@
   "%_releasegroupcomment%": {
     "prefix": "%_releasegroupcomment",
     "body": "%_releasegroupcomment%"
+  },
+  "%releasegroup_firstreleasedate%": {
+    "prefix": "%releasegroup_firstreleasedate",
+    "body": "%releasegroup_firstreleasedate%"
   },
   "%_primaryreleasetype%": {
     "prefix": "%_primaryreleasetype",
