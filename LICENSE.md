@@ -1,4 +1,4 @@
-Copyright (c) 2019-2020 Philipp Wolfer <ph.wolfer@gmail.com>
+Copyright (c) 2019-2021 Philipp Wolfer <ph.wolfer@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
