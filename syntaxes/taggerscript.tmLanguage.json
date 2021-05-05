@@ -32,13 +32,18 @@
 		},
 		{
 			"comment": "Variables",
-			"name": "variable.taggerscript",
+			"name": "variable.other.taggerscript",
 			"match": "%[_a-zA-Z0-9:]*%"
 		},
 		{
+			"comment": "Unicode escape sequences",
+			"name": "constant.character.escape.taggerscript",
+			"match": "\\\\u[a-fA-F0-9]{4}"
+		},
+		{
 			"comment": "Escape sequences",
-			"name": "keyword.other.taggerscript",
-			"match": "\\\\."
+			"name": "constant.character.escape.taggerscript",
+			"match": "\\\\[^u]"
 		}
 	],
 	"repository": {
