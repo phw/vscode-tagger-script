@@ -2,7 +2,7 @@
     "name": "tagger-script",
     "displayName": "Tagger Script Syntax",
     "description": "Syntax highlighting and code snippets for MusicBrainz Picard Tagger Script.",
-    "version": "0.3.0",
+    "version": "0.3.1",
     "icon": "icon.png",
     "publisher": "phw",
     "repository": "https://github.com/phw/vscode-tagger-script",
@@ -43,7 +43,7 @@
     },
     "devDependencies": {
         "changelog-parser": "^2.8.0",
-        "vsce": "^1.87.1"
+        "vsce": "^1.88.0"
     },
     "scripts": {
         "package": "mkdir -p build && vsce package --out build",
