@@ -17,7 +17,7 @@
 		{
 			"comment": "Functions",
 			"name": "meta.taggerscript",
-			"begin": "\\$(?!noop)[_a-zA-Z0-9]*\\(",
+			"begin": "\\$[a-zA-Z][_a-zA-Z0-9]*\\(",
 			"end": "\\)",
 			"captures": {
 				"0": {
