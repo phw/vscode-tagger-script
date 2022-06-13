@@ -32,9 +32,9 @@
     "prefix": "$right",
     "body": "\\$right(${1:text,num})"
   },
-  "$substr(text,start,end)": {
+  "$substr(text,start[,end])": {
     "prefix": "$substr",
-    "body": "\\$substr(${1:text,start,end})"
+    "body": "\\$substr(${1:text,start[,end]})"
   },
   "$find(haystack,needle)": {
     "prefix": "$find",
@@ -72,6 +72,10 @@
     "prefix": "$inmulti",
     "body": "\\$inmulti(${1:x,y})"
   },
+  "$is_multi(x)": {
+    "prefix": "$is_multi",
+    "body": "\\$is_multi(${1:x})"
+  },
   "$set(name,value)": {
     "prefix": "$set",
     "body": "\\$set(${1:name,value})"
@@ -96,9 +100,9 @@
     "prefix": "$getmulti",
     "body": "\\$getmulti(${1:name,index[,separator]})"
   },
-  "$slice(name,start,end[,separator])": {
+  "$slice(name,start[,end[,separator]])": {
     "prefix": "$slice",
-    "body": "\\$slice(${1:name,start,end[,separator]})"
+    "body": "\\$slice(${1:name,start[,end[,separator]]})"
   },
   "$join(name,text[,separator])": {
     "prefix": "$join",
@@ -279,6 +283,22 @@
   "$datetime([format])": {
     "prefix": "$datetime",
     "body": "\\$datetime(${1:[format]})"
+  },
+  "$year(date[,date_order])": {
+    "prefix": "$year",
+    "body": "\\$year(${1:date[,date_order]})"
+  },
+  "$month(date[,date_order])": {
+    "prefix": "$month",
+    "body": "\\$month(${1:date[,date_order]})"
+  },
+  "$day(date[,date_order])": {
+    "prefix": "$day",
+    "body": "\\$day(${1:date[,date_order]})"
+  },
+  "$countryname(country_code[,translate])": {
+    "prefix": "$countryname",
+    "body": "\\$countryname(${1:country_code[,translate]})"
   },
 
   // Metadata variables
@@ -610,6 +630,10 @@
     "prefix": "%replaygain_reference_loudness",
     "body": "%replaygain_reference_loudness%"
   },
+  "%gapless%": {
+    "prefix": "%gapless",
+    "body": "%gapless%"
+  },
 
   // Technical variables
   "%_albumtracknumber%": {
@@ -751,6 +775,10 @@
   "%_albumartists_sort%": {
     "prefix": "%_albumartists_sort",
     "body": "%_albumartists_sort%"
+  },
+  "%_workcomment%": {
+    "prefix": "%_workcomment",
+    "body": "%_workcomment%"
   },
 
   // Coverart specific variables
