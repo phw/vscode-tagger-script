@@ -188,29 +188,29 @@
     "prefix": "$not",
     "body": "\\$not(${1:x})"
   },
-  "$eq(x,y)": {
+  "$eq(x,y[,type])": {
     "prefix": "$eq",
-    "body": "\\$eq(${1:x,y})"
+    "body": "\\$eq(${1:x,y[,type]})"
   },
-  "$ne(x,y)": {
+  "$ne(x,y[,type])": {
     "prefix": "$ne",
-    "body": "\\$ne(${1:x,y})"
+    "body": "\\$ne(${1:x,y[,type]})"
   },
-  "$lt(x,y)": {
+  "$lt(x,y[,type])": {
     "prefix": "$lt",
-    "body": "\\$lt(${1:x,y})"
+    "body": "\\$lt(${1:x,y[,type]})"
   },
-  "$lte(x,y)": {
+  "$lte(x,y[,type])": {
     "prefix": "$lte",
-    "body": "\\$lte(${1:x,y})"
+    "body": "\\$lte(${1:x,y[,type]})"
   },
-  "$gt(x,y)": {
+  "$gt(x,y[,type])": {
     "prefix": "$gt",
-    "body": "\\$gt(${1:x,y})"
+    "body": "\\$gt(${1:x,y[,type]})"
   },
-  "$gte(x,y)": {
+  "$gte(x,y[,type])": {
     "prefix": "$gte",
-    "body": "\\$gte(${1:x,y})"
+    "body": "\\$gte(${1:x,y[,type]})"
   },
   "$eq_any(x,a1,a2,…)": {
     "prefix": "$eq_any",
@@ -227,6 +227,14 @@
   "$ne_all(x,a1,a2,…)": {
     "prefix": "$ne_all",
     "body": "\\$ne_all(${1:x,a1,a2,…})"
+  },
+  "$max(type,a1,a2,…)": {
+    "prefix": "$max",
+    "body": "\\$max(${1:type,a1,a2,…})"
+  },
+  "$min(type,a1,a2,…)": {
+    "prefix": "$max",
+    "body": "\\$max(${1:type,a1,a2,…})"
   },
   "$len(text)": {
     "prefix": "$len",
@@ -724,6 +732,14 @@
     "prefix": "%_bits_per_sample",
     "body": "%_bits_per_sample%"
   },
+  "%_file_created_timestamp%": {
+    "prefix": "%_file_created_timestamp",
+    "body": "%_file_created_timestamp%"
+  },
+  "%_file_modified_timestamp%": {
+    "prefix": "%_file_modified_timestamp",
+    "body": "%_file_modified_timestamp%"
+  },
   "%_multiartist%": {
     "prefix": "%_multiartist",
     "body": "%_multiartist%"
@@ -739,6 +755,10 @@
   "%_datatrack%": {
     "prefix": "%_datatrack",
     "body": "%_datatrack%"
+  },
+  "%_discpregap%": {
+    "prefix": "%_discpregap",
+    "body": "%_discpregap%"
   },
   "%_pregap%": {
     "prefix": "%_pregap",
@@ -776,9 +796,81 @@
     "prefix": "%_albumartists_sort",
     "body": "%_albumartists_sort%"
   },
+  "%_lyricistsort%": {
+    "prefix": "%_lyricistsort",
+    "body": "%_lyricistsort%"
+  },
+  "%_writersort%": {
+    "prefix": "%_writersort",
+    "body": "%_writersort%"
+  },
   "%_workcomment%": {
     "prefix": "%_workcomment",
     "body": "%_workcomment%"
+  },
+  "%_recording_series%": {
+    "prefix": "%_recording_series",
+    "body": "%_recording_series%"
+  },
+  "%_recording_seriesid%": {
+    "prefix": "%_recording_seriesid",
+    "body": "%_recording_seriesid%"
+  },
+  "%_recording_seriescomment%": {
+    "prefix": "%_recording_seriescomment",
+    "body": "%_recording_seriescomment%"
+  },
+  "%_recording_seriesnumber%": {
+    "prefix": "%_recording_seriesnumber",
+    "body": "%_recording_seriesnumber%"
+  },
+  "%_release_series%": {
+    "prefix": "%_release_series",
+    "body": "%_release_series%"
+  },
+  "%_release_seriesid%": {
+    "prefix": "%_release_seriesid",
+    "body": "%_release_seriesid%"
+  },
+  "%_release_seriescomment%": {
+    "prefix": "%_release_seriescomment",
+    "body": "%_release_seriescomment%"
+  },
+  "%_release_seriesnumber%": {
+    "prefix": "%_release_seriesnumber",
+    "body": "%_release_seriesnumber%"
+  },
+  "%_releasegroup_series%": {
+    "prefix": "%_releasegroup_series",
+    "body": "%_releasegroup_series%"
+  },
+  "%_releasegroup_seriesid%": {
+    "prefix": "%_releasegroup_seriesid",
+    "body": "%_releasegroup_seriesid%"
+  },
+  "%_releasegroup_seriescomment%": {
+    "prefix": "%_releasegroup_seriescomment",
+    "body": "%_releasegroup_seriescomment%"
+  },
+  "%_releasegroup_seriesnumber%": {
+    "prefix": "%_releasegroup_seriesnumber",
+    "body": "%_releasegroup_seriesnumber%"
+  },
+  "%_work_series%": {
+    "prefix": "%_work_series",
+    "body": "%_work_series%"
+  },
+  "%_work_seriesid%": {
+    "prefix": "%_work_seriesid",
+    "body": "%_work_seriesid%"
+  },
+  "%_work_seriescomment%": {
+    "prefix": "%_work_seriescomment",
+    "body": "%_work_seriescomment%"
+  },
+  "%_work_seriesnumber%": {
+    "prefix": "%_work_seriesnumber",
+    "body": "%_work_seriesnumber%"
   },
 
   // Coverart specific variables
