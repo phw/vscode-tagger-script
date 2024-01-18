@@ -13,7 +13,7 @@ built into Picard.
 
 ## Installation
 Install this extension using the extension manager inside Visual Studio Code or
-from the (Visual Studio marketplace)[https://marketplace.visualstudio.com/items?itemName=phw.tagger-script].
+from the [Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=phw.tagger-script).
 
 The latest release can also always be downloaded from the
 [release page](https://github.com/phw/vscode-tagger-script/releases).
