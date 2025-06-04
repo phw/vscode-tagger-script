@@ -42,8 +42,8 @@
         ]
     },
     "devDependencies": {
-        "changelog-parser": "^2.8.0",
-        "vsce": "^1.88.0"
+        "@vscode/vsce": "^3.4.2",
+        "changelog-parser": "^3.0.1"
     },
     "scripts": {
         "package": "mkdir -p build && vsce package --out build",
