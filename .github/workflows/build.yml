@@ -19,6 +19,8 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/')
       run: npm run publish -- -p "$VSCE_TOKEN"
       env:
+        # Needs to be obtained on dev.azure.com, see
+        # https://code.visualstudio.com/api/working-with-extensions/publishing-extension
         VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
     - name: Prepare changelog
       id: changelog
